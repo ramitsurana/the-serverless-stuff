@@ -1,0 +1,13 @@
+# Region for the bucket
+region: ap-southeast-1
+
+# Give Proper name to the lambda function
+function_name: "ramit-test"
+handler: app.APP
+# role: lambda_basic_execution
+description: Lambda Function for AWS Config
+environment_variables:
+  LOG_LEVEL: INFO
+# dist_directory: dist
+timeout: 300
+memory_size: 512
